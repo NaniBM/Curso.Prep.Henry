@@ -64,6 +64,11 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
+  //usario["password"]
+  if(usuario.password === password){
+    return true
+  }
+  return false
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
@@ -94,6 +99,9 @@ function sumarLikesDeUsuario(usuario) {
   // Suma todos los likes de todos los objetos "post"
   // Devuelve la suma
   // Tu código:
+  usuario.posts.reduce((acc, curr) =>{
+    return Num(acc) + curr
+  })
 }
 
 function agregarMetodoCalculoDescuento(producto) {
@@ -106,6 +114,7 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  
 
 }
 
