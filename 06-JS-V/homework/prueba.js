@@ -4,10 +4,11 @@ String.prototype.reverse = function () {
       invertida = invertida + this.charAt(i)
     }
     return invertida; 
-  }
+}
 
 
 var cadena = 'hola'
 
 var long = cadena.reverse()
+
 console.log(long)
